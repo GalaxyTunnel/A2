@@ -9,20 +9,14 @@ keep_vars = true
 [vars]
 # UUID ကို ဒီမှာ မထည့်ထားဘူး (Dashboard မှာ ထည့်ထားမယ်)
 GLOBAL_PROXY_POOL = [
-    
-  "cdn.xn--b6gac.eu.org",          
-    "cdn-all.xn--b6gac.eu.org",       
-    "cdn-b100.xn--b6gac.eu.org",     
-    "proxy.xxxxxxxx.tk",              
-    "cfip.xxxxxxxx.tk",              
-
-    "eu.cdn.xn--b6gac.eu.org",
-    "cf-eu.xxxxxxxx.ml",
-    
-    "us.cdn.xn--b6gac.eu.org",
-    "cf-us.xxxxxxxx.ga",
-
-    "workers.cloudflare.com",
+    // Asia-Pacific
+    "cdn.xn--b6gac.eu.org",           // SE Asia optimized
+    "cdn-all.xn--b6gac.eu.org",       // Global anycast
+    "cdn-b100.xn--b6gac.eu.org",      // Original fallback
+    "proxy.xxxxxxxx.tk",              // APAC edge
+    "cfip.xxxxxxxx.tk",               // APAC edge
+     Global Anycast (best for most regions)
+    "workers.cloudflare.com", 
     "www.visa.com",
     "www.visakorea.com",
     "africa.visa.com",
@@ -30,7 +24,6 @@ GLOBAL_PROXY_POOL = [
     "www.visa.com.hk",
     "www.visasoutheasteurope.com",
 ]
-
 DNS_RESOLVER_URL = [ 
 "https://cloudflare-dns.com/dns-query",
     "https://1.1.1.1/dns-query",
