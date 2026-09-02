@@ -9,13 +9,13 @@ keep_vars = true
 [vars]
 # UUID ကို ဒီမှာ မထည့်ထားဘူး (Dashboard မှာ ထည့်ထားမယ်)
 GLOBAL_PROXY_POOL = [
-    // Asia-Pacific
-    "cdn.xn--b6gac.eu.org",           // SE Asia optimized
-    "cdn-all.xn--b6gac.eu.org",       // Global anycast
-    "cdn-b100.xn--b6gac.eu.org",      // Original fallback
-    "proxy.xxxxxxxx.tk",              // APAC edge
-    "cfip.xxxxxxxx.tk",               // APAC edge
-     Global Anycast (best for most regions)
+    #// Asia-Pacific
+    "cdn.xn--b6gac.eu.org",           #// SE Asia optimized
+    "cdn-all.xn--b6gac.eu.org",       #// Global anycast
+    "cdn-b100.xn--b6gac.eu.org",      #// Original fallback
+    "proxy.xxxxxxxx.tk",              #// APAC edge
+    "cfip.xxxxxxxx.tk",               #// APAC edge
+    # Global Anycast (best for most regions)
     "workers.cloudflare.com", 
     "www.visa.com",
     "www.visakorea.com",
