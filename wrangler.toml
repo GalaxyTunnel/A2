@@ -1,0 +1,44 @@
+name = "prozerone" 
+main = "_worker.js"
+compatibility_date = "2024-03-20"
+compatibility_flags = [ "nodejs_compat" ]
+
+# ✅ ဒီ line ကို ထည့်ပါ
+keep_vars = true
+
+[vars]
+# UUID ကို ဒီမှာ မထည့်ထားဘူး (Dashboard မှာ ထည့်ထားမယ်)
+GLOBAL_PROXY_POOL = [
+    
+  "cdn.xn--b6gac.eu.org",          
+    "cdn-all.xn--b6gac.eu.org",       
+    "cdn-b100.xn--b6gac.eu.org",     
+    "proxy.xxxxxxxx.tk",              
+    "cfip.xxxxxxxx.tk",              
+
+    "eu.cdn.xn--b6gac.eu.org",
+    "cf-eu.xxxxxxxx.ml",
+    
+    "us.cdn.xn--b6gac.eu.org",
+    "cf-us.xxxxxxxx.ga",
+
+    "workers.cloudflare.com",
+    "www.visa.com",
+    "www.visakorea.com",
+    "africa.visa.com",
+    "www.visa.com.sg",
+    "www.visa.com.hk",
+    "www.visasoutheasteurope.com",
+]
+
+DNS_RESOLVER_URL = [ 
+"https://cloudflare-dns.com/dns-query",
+    "https://1.1.1.1/dns-query",
+    "https://dns.google/dns-query",
+    "https://8.8.8.8/dns-query",
+    "https://dns.quad9.net/dns-query",
+    "https://9.9.9.9/dns-query",
+    "https://dns.alidns.com/dns-query",
+    "https://doh.pub/dns-query",
+    "https://doh.opendns.com/dns-query",
+]
