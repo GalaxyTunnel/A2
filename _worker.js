@@ -18,7 +18,7 @@ const GLOBAL_PROXY_POOL = [
     "cdn-b100.xn--b6gac.eu.org",      // Original fallback
     "proxy.xxxxxxxx.tk",              // APAC edge
     "cfip.xxxxxxxx.tk",               // APAC edge
-     Global Anycast (best for most regions)
+    //Global Anycast (best for most regions)
     "workers.cloudflare.com", 
     "www.visa.com",
     "www.visakorea.com",
