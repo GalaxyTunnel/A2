@@ -11,14 +11,15 @@ var trojanPass = "";              // TROJAN: password (optional if only VLESS)
 // ============================================
 // These are Cloudflare CDN domains that resolve to edge nodes near users.
 // The worker auto-rotates through them with health checks.
-const GLOBAL_PROXY_POOL = [
+Const GLOBAL_PROXY_POOL = [
     // Asia-Pacific
     "cdn.xn--b6gac.eu.org",           // SE Asia optimized
     "cdn-all.xn--b6gac.eu.org",       // Global anycast
     "cdn-b100.xn--b6gac.eu.org",      // Original fallback
     "proxy.xxxxxxxx.tk",              // APAC edge
     "cfip.xxxxxxxx.tk",               // APAC edge
-    //Global Anycast (best for most regions)
+
+    /* Global Anycast (best for most regions) */
     "workers.cloudflare.com", 
     "www.visa.com",
     "www.visakorea.com",
@@ -31,6 +32,7 @@ const GLOBAL_PROXY_POOL = [
 // Optional: external proxy list URL (GitHub, Gist, etc.)
 // Leave empty or set via env.PROXY_LIST_URL to disable external fetch
 var githubProxyURL = "";
+
 
 // ============================================
 // GLOBAL DoH PROVIDERS — Multi-Region Failover
