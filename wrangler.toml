@@ -1,37 +1,17 @@
-name = "prozerone" 
+name = "galaxy-tunnel"
 main = "_worker.js"
-compatibility_date = "2024-03-20"
+compatibility_date = "2024-09-23"
 compatibility_flags = [ "nodejs_compat" ]
 
-# ✅ ဒီ line ကို ထည့်ပါ
 keep_vars = true
 
 [vars]
+UUID = ""
+# If TROJAN_PASS is empty, it automatically uses the UUID value for Trojan authentication
+TROJAN_PASS = ""
+PASSWORD = ""
+MASK_PAGE = "true"
+WS_PATH = "galaxy-tunnel"
+PROXYIP = "www.visasoutheasteurope.com"
 PROXY_LIST_URL = "https://galaxytunnel.github.io/PROXYIP.txt"
-
-# UUID ကို ဒီမှာ မထည့်ထားဘူး (Dashboard မှာ ထည့်ထားမယ်)
-GLOBAL_PROXY_POOL = [
-    #// Asia-Pacific
-    "cdn.xn--b6gac.eu.org",           #// SE Asia optimized
-    "cdn-all.xn--b6gac.eu.org",       #// Global anycast
-    "cdn-b100.xn--b6gac.eu.org",      #// Original fallback             
-    # Global Anycast (best for most regions)
-    "workers.cloudflare.com", 
-    "www.visa.com",
-    "www.visakorea.com",
-    "africa.visa.com",
-    "www.visa.com.sg",
-    "www.visa.com.hk",
-    "www.visasoutheasteurope.com",
-]
-DNS_RESOLVER_URL = [ 
-"https://cloudflare-dns.com/dns-query",
-    "https://1.1.1.1/dns-query",
-    "https://dns.google/dns-query",
-    "https://8.8.8.8/dns-query",
-    "https://dns.quad9.net/dns-query",
-    "https://9.9.9.9/dns-query",
-    "https://dns.alidns.com/dns-query",
-    "https://doh.pub/dns-query",
-    "https://doh.opendns.com/dns-query",
-]
+DNS_RESOLVER_URL = "https://cloudflare-dns.com/dns-query"
